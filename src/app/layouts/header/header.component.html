@@ -1,0 +1,53 @@
+<nav >
+  <div>
+  <div nz-row>
+    <div nz-col nzSpan="8"></div>
+
+    <div nz-col nzSpan="16">
+  <ul  nz-menu nzMode="horizontal">
+    <li nz-menu-item nzSelected>
+      <span nz-icon nzType="appstore"></span>
+      <a
+      routerLink="/"
+      rel="noopener noreferrer">Home</a>
+    </li>
+    <li nz-menu-item >
+      <a
+      routerLink="/freinds"
+      rel="noopener noreferrer">Friends</a>
+    </li>
+    <li  nz-menu-item nzIcon="setting">
+      <span nz-icon nzType="appstore"></span>
+      <a
+      routerLink="/notificatins"
+      rel="noopener noreferrer">Notificatins</a>
+    </li>
+    <li nz-menu-item>
+      <a
+      routerLink="/profile"
+      rel="noopener noreferrer">profile</a>
+    </li>
+    <li
+    nz-menu-item
+    *ngIf="!user"
+    >
+      <button
+      nz-button nzType="primary"
+      routerLink="/login"
+      rel="noopener noreferrer">login</button>
+    </li>
+    <li
+    nz-menu-item
+    *ngIf="!user"
+    >
+      <button
+      nz-button nzType="primary"
+      routerLink="/register"
+      rel="noopener noreferrer">register</button>
+    </li>
+
+  </ul>
+</div>
+</div>
+</div>
+</nav>
